@@ -54,6 +54,52 @@
 				<a href="#" class="button button--dark">DarkBG</a>
 				<button type="button" class="button button--dark" aria-disabled="true" disabled>DarkBG disabled</button>
 			</div>
+			<div style="width:300px;padding:10px">
+				<a href="#" class="button button--blue">Blue</a>
+				<button type="button" class="button button--blue" aria-disabled="true" disabled>blue disabled</button>
+			</div>
+
+			<h3>Form</h3>
+			<form action="" style="max-width:600px">
+				<div class="form-control">
+					<label for="iptID"><span class="text--required">*</span> Email Address (ID)</label>
+					<input type="email" id="iptID" aria-required="true">
+					<div class="error-msg" style="display: block;">Error message</div>
+				</div>
+				<div class="form-control form-group-select">
+					<label for="sltM">월</label>
+					<select id="sltM" name="sltM">
+						<option value="" disabled="disabled">월</option>
+						<option value="" >1월</option>
+						<option value="" >2월</option>
+						<option value="" >3월</option>
+					</select>
+				</div>
+				<div class="form-checkbox">
+					<input type="checkbox" id="chkID">
+					<label for="chkID"><span></span>checkbox</label>
+				</div>
+				<div class="form-group">
+					<label for="chkS1">복수형</label>
+					<div class="inline-form-group">
+						<div class="form-checkbox">
+							<input id="chkS1" type="radio" name="chkS" value="1" >
+							<label for="chkS1"><span></span>선택1</label>
+						</div>
+						<div class="form-checkbox">
+							<input id="chkS2" type="radio" name="chkS" value="2">
+							<label for="chkS2"><span></span>선택2</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group form-group-file">
+					<div class="box__files">
+						<input class="upload-name" value="Select Avatar" disabled="disabled" aria-required="false">
+						<label for="iptPhoto" class="button">File Search</label>
+						<input type="file" id="iptPhoto" class="upload-hidden">
+					</div>
+				</div>
+			</form>
 
 			<h3>UI</h3>
 			<div style="overflow:hidden">
@@ -143,8 +189,11 @@
 			<p><a href="session_view.html" style="text-decoration: line-through;">Session view</a></p>
 			<p><a href="networking.html" style="text-decoration: line-through;">Network</a></p>
 			<p><a href="login.html" style="text-decoration: line-through;">로그인</a></p>
-			<p><a href="#" style="text-decoration: line-through;">등록</a></p>
-			<p><a href="#" style="text-decoration: line-through;">등록확인</a></p>
+			<p><a href="registration.html">등록</a></p>
+			<p><a href="regist_review.html">등록확인</a></p>
+			<p><a href="#" style="text-decoration: line-through;">등록완료1</a></p>
+			<p><a href="#" style="text-decoration: line-through;">등록완료2</a></p>
+			<p><a href="#" style="text-decoration: line-through;">등록완료3</a></p>
 			<p><a href="#" style="text-decoration: line-through;">마이페이지</a></p>
 		</div>
 	</div>
