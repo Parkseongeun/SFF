@@ -172,8 +172,8 @@ h3 + .text__info{font-size:3.5vw}
 .box__article--schedule h2 + .text__info{margin-top:-21px;margin-bottom:58px}
 .list__schedule::after{content:'';display:block;clear:both}
 .list__schedule .list-item{position:relative;float:left;width:25%;padding:0 15px;-webkit-box-sizing:border-box;box-sizing:border-box}
-.list__schedule .box__zone{position:relative;display:flex;width:100%;height:0;padding-top:100%}
-.list__schedule .box__zone .box__inner{position:absolute;top:0;left:0;right:0;bottom:0;display:flex;flex-direction:column;justify-content:center;align-items:center;background-color:#fff;border-radius:50vh;border:5px solid #ececec}
+.list__schedule .box__zone{position:relative;display:-webkit-flex;display:flex;width:100%;height:0;padding-top:100%}
+.list__schedule .box__zone .box__inner{position:absolute;top:0;left:0;right:0;bottom:0;display:-webkit-flex;display:flex;flex-direction:column;justify-content:center;align-items:center;background-color:#fff;border-radius:50vh;border:5px solid #ececec}
 .list__schedule .box__zone p{width:200px;text-align:center;line-height:1.4}
 .list__schedule .box__zone p + p{padding-top:10px;margin-top:10px;border-top:2px dotted #c0c0c0}
 .list__schedule .box__zone .text__time{display:block;font-size:24px;font-weight:500;color:#313131;line-height:1.35}
@@ -274,6 +274,7 @@ h3 + .text__info{font-size:3.5vw}
 .box__card--speaker .box__info .text__affiliation{font-size:3.05vw}
 .box__card--speaker .box__info .text__position{font-size:3.05vw}
 .box__networking .link__more{width:24vw}
+.list__networking-person li{width:22%;margin:3.5vw 1.5% 0}
 }
 
 /* Keynote */
@@ -454,8 +455,10 @@ input[type="checkbox"]:checked + label > span:after{left:1.3vw;top:0.6vw;width:1
 input[type=radio]:checked + label > span:after{left:0.8vw;top:0.8vw;width:2vw;height:2vw}
 .form-control{margin:6vw 0 2vw 0}
 .form-control > input,
-.form-control > select{font-size:4vw}
-.form-control > label{font-size:4vw}
+.form-control > select{height:9vw;font-size:4vw}
+.form-control > label{height:9vw;font-size:4vw}
+.form-control.js-focus > label,
+.form-control.js-active > label{top:-4vw}
 .form-group{overflow:hidden}
 .form-group > label{margin-bottom:4vw;font-size:4vw}
 .inline-form-group{margin-right:-8vw}
@@ -471,4 +474,111 @@ input[type=radio]:checked + label > span:after{left:0.8vw;top:0.8vw;width:2vw;he
 .box_agreement .box__form-control{overflow:hidden;clear:both;display:block;-webkit-display:block;margin-top:2vw}
 .box_agreement .box__form-control + .box__form-control{margin-top:4vw}
 .box_agreement .box__form-control p{clear:both;font-size:4vw}
+}
+
+/* Login */
+.box__article--login h2{padding:52px 0 26px;font-size: 45px}
+.box__article--login{max-width:646px;margin:0 auto}
+.box__article--login .form__regist{max-width:460px;margin:0 auto;padding:0 15px}
+.box__article--login .form__regist .form-checkbox{margin-top:-10px}
+.box__button{margin-top:36px}
+.box__button a,
+.box__button button{display:block;margin:0 auto;width:284px;height:46px;font-size:20px;line-height:44px;font-weight:500;text-align:center}
+.box__button .button--gray{background-color:#ededed;border-color:#ededed}
+.box__button .button--gray:hover,
+.box__button .button--gray:focus{background-color:#e3e3e3;border-color:#e3e3e3}
+.box__button .link__find{margin:18px auto;font-size:16px;text-decoration: underline}
+@media (max-width:768px){
+.box__article--login .form__regist{padding:0 12px}
+.box__article--login .form__regist .form-checkbox{margin-top:0}
+.box__button a,
+.box__button button{width:74vw;height:10vw;font-size:4vw;line-height:9.7vw}
+.box__button .link__find{margin:3vw auto;font-size:3.5vw}
+}
+
+/* Mypage */
+.box__my-info{position:relative;border-radius:22px;padding:35px 35px 35px 75px;background-color:#eee}
+.box__card--user{position:relative;padding-left:80px}
+.box__card--user .box__image{position:absolute;top:0;left:0;width:57px;padding-top:57px;border-radius:50vh}
+.box__card--user .text__name{font-size:18px;font-weight:500}
+.box__card--user .text__affiliation,
+.box__card--user .text__position{font-size:16px;color:#757575}
+.box__card--user .link__infomation{margin-top:20px}
+.box__my-info .link__logout{position:absolute;top:35px;right:35px;font-size:18px;font-weight:500}
+.box__my-info .link__logout:hover{text-decoration: underline}
+.mypage .box__article{position:relative;overflow: hidden}
+.mypage .box__article h3{font-size:32px;font-family:'SamsungSharpSans'}
+.mypage .box__article h3 + .text__info{font-size:20px;line-height:1.52}
+.box__article--badges .text__info{float:left}
+.box__article--badges .box__badges{float:right}
+.box__article--badges .box__badges ul{overflow: hidden;}
+.box__article--badges .box__badges ul li{float:left;width:92px;margin:0 14px;text-align:center}
+.box__article--badges .box__badges ul li span{display:inline-block;position:relative;width:100%;padding-top:94px;font-size:18px;font-weight:500}
+.box__article--badges .box__badges ul li span:before{content:'';position:absolute;top:0;left:50%;width:100%;height:0;padding-top:100%;margin-left:-43px;background:url(../../images/sprite__badges.png) no-repeat 0 0;background-size:431px auto;border-radius:50vh}
+.box__article--badges .box__badges ul li.badge--live span:before{background-position:0 -102.5px}
+.box__article--badges .box__badges ul li.badge--session span:before{background-position:-113px -102.5px}
+.box__article--badges .box__badges ul li.badge--question span:before{background-position:-227px -102.5px}
+.box__article--badges .box__badges ul li.badge--survey span:before{background-position:-340px -102.5px}
+.box__article--badges .box__badges ul li.badge--active span:before{background-position-y:0 !important}
+.box__article--survey .text__info{float:left;width:70%}
+.box__article--survey .button__apply{float:right;width:30%}
+.mypage .box__article--networking{margin-top:0;background-color:transparent}
+.mypage .box__article--networking .box__networking .link__more{margin-top:50px}
+.mypage .box__networking{padding:37px 0 53px;margin-bottom:0;border:1px solid #e6e6e6;border-radius:20px}
+.list__messages:after{display:block;content:'';clear:both}
+.list__messages .list-item{width:90%;margin-top:19px}
+.list__messages .list-item--question{float:left}
+.list__messages .list-item--answer{float:right}
+.list__messages .list-item--answer .box__card--messages{justify-content:flex-end}
+.box__card--messages{position:relative;display:-webkit-flex;display:flex;padding:24px 80px 20px 34px;border-radius:22px;background-color:#eee}
+.box__card--messages .box__image{-webkit-flex:none;flex:none;width:57px;padding-top:57px;margin-right:26px;border-radius:50vh}
+.box__card--messages .box__info{-webkit-flex:none;flex:none;max-width:233px;margin-right:60px}
+.box__card--messages .box__info .text__name{display:block;font-size:18px;font-weight:500}
+.box__card--messages .box__info .text__affiliation{display:block;font-size:14px;color:#757575}
+.box__card--messages .text__context{font-size:16px}
+.box__card--messages .button__contact{position:absolute;top:50%;right:10px;width:30px;height:30px;margin-top:-15px;background:url(../../images/button__contact.png) 0 0;background-size:100% auto;font-size:0;line-height:0}
+.box__article--messages .link__more{display:block;width:140px;margin:50px auto 0}
+@media (max-width:1419px){
+.box__article--badges .text__info{float:none;margin-bottom:3vw}
+.box__article--badges .box__badges{float:none}
+.list__messages .list-item{width:93%}
+.box__card--messages{padding-right:60px}
+.box__article--survey .text__info{float:none;width:100%;margin-bottom:3vw}
+.box__article--survey .button__apply{float:none}
+}
+@media (max-width:768px){
+.box__my-info{padding:4vw 4vw 4vw 6vw;margin:0 12px}
+.box__card--user .text__name{font-size:3.5vw}
+.box__card--user .text__affiliation, 
+.box__card--user .text__position{font-size:3vw}
+.box__card--user .link__infomation{margin-top:3.5vw}
+.box__my-info .link__logout{top:4vw;right:4vw;font-size:3.5vw}
+.mypage .box__article h3{font-size:6vw}
+.mypage .box__article h3 + .text__info{font-size:4vw}
+.box__article--badges .box__badges ul li{width:46px;margin:0 10px}
+.box__article--badges .box__badges ul li span{padding-top:46px;font-size:3.5vw}
+.box__article--badges .box__badges ul li span:before{margin-left:-23px;background-size:215px auto}
+.box__article--badges .box__badges ul li.badge--live span:before{background-position:0 -51px}
+.box__article--badges .box__badges ul li.badge--session span:before{background-position:-57px -51px}
+.box__article--badges .box__badges ul li.badge--question span:before{background-position:-114px -51px}
+.box__article--badges .box__badges ul li.badge--survey span:before{background-position:-170px -51px}
+.box__card--messages{flex-direction:column;padding:5vw 5vw 5vw 5vw}
+.box__card--messages .box__image{width:16vw;padding-top:16vw;margin-right:0}
+.box__card--messages .box__info{margin-top:2vw}
+.box__card--messages .box__info .text__name{font-size:3.5vw}
+.box__card--messages .box__info .text__affiliation{font-size:3vw}
+.box__card--messages .text__context{margin-top:1.5vw;font-size:3.5vw}
+}
+
+/* Registration */
+.text__finish{text-align:center;font-size:20px;line-height:1.77em;color:#000}
+.text__finish strong{font-size:28px;font-weight:500}
+.text__finish .link{text-decoration: underline;color:#006bea}
+@media (max-width:1419px){
+	.text__finish{font-size:17px}
+	.text__finish strong{font-size:24px}
+}
+@media (max-width:768px){
+	.text__finish{font-size:3.5vw}
+	.text__finish strong{font-size:5vw}
 }
