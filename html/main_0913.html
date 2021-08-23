@@ -66,33 +66,11 @@
 				<li class="list-item">
 					<a href="#" class="box__zone">
 						<div class="box__inner">
+							<!-- Live 차트 -->
+							<div class="liveChart-holder">
+								<canvas id="liveChart"></canvas>
+							</div>
 							<p><span class="text__time" id="GETDICT_DATE_TEXT_1">10/6 (Wed) 10:00</span><span class="text__code" id="GETDICT_CODE_TEXT_1">(PST / USA)</span></p>
-							<!-- <div class="progress">
-								<div class="bar" data-name="SVG Skill" data-percent="100%">
-									<svg viewBox="0 0 200 200">
-									<g fill="none" stroke-width="4" transform="translate(100,100)">
-										<path d="M 86.6,-50 A 100,100 0 0,1 -86.6,50" stroke="url(#cl1)"/>
-										<path d="M -86.6,50 A 100,100 0 0,1 86.6,-50" stroke="url(#cl2)"/>
-									</g>
-									</svg>
-									<svg viewBox="0 0 200 200">
-									<path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="630">
-									</path>
-									</svg>
-								</div>
-								<svg width="0" height="0">
-									<defs>
-									<linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
-										<stop stop-color="#ff9d12"/>
-										<stop offset="100%" stop-color="#f42818"/>
-									</linearGradient>
-									<linearGradient id="cl2" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
-										<stop stop-color="#ff9d12"/>
-										<stop offset="100%" stop-color="#f42818"/>
-									</linearGradient>
-									</defs>
-								</svg>
-							</div> -->
 						</div>
 					</a>
 				</li>
@@ -138,7 +116,6 @@
 										<span class="text__name">Gitae Jeong</span>
 										<span class="text__affiliation">Samsung Electronics America Inc.</span>
 										<span class="text__position">Team Leader</span>
-										<span class="button link__more" id="GETDICT_BUTTON_TEXT_1">Learn more</span>
 									</div>
 								</a>
 							</li>
@@ -150,7 +127,6 @@
 										<span class="text__name">YK Hong</span>
 										<span class="text__affiliation">Samsung Electronics America Inc.</span>
 										<span class="text__position">Team Leader</span>
-										<span class="button link__more" id="GETDICT_BUTTON_TEXT_1">Learn more</span>
 									</div>
 								</a>
 							</li>
@@ -166,7 +142,6 @@
 										<span class="text__name">Gitae Jeong</span>
 										<span class="text__affiliation">Samsung Electronics America Inc.</span>
 										<span class="text__position">Team Leader</span>
-										<span class="button link__more" id="GETDICT_BUTTON_TEXT_1">Learn more</span>
 									</div>
 								</a>
 							</li>
@@ -178,7 +153,6 @@
 										<span class="text__name">YK Hong</span>
 										<span class="text__affiliation">Samsung Electronics America Inc.</span>
 										<span class="text__position">Team Leader</span>
-										<span class="button link__more" id="GETDICT_BUTTON_TEXT_1">Learn more</span>
 									</div>
 								</a>
 							</li>
@@ -194,7 +168,6 @@
 										<span class="text__name">Gitae Jeong</span>
 										<span class="text__affiliation">Samsung Electronics America Inc.</span>
 										<span class="text__position">Team Leader</span>
-										<span class="button link__more" id="GETDICT_BUTTON_TEXT_1">Learn more</span>
 									</div>
 								</a>
 							</li>
@@ -206,7 +179,6 @@
 										<span class="text__name">YK Hong</span>
 										<span class="text__affiliation">Samsung Electronics America Inc.</span>
 										<span class="text__position">Team Leader</span>
-										<span class="button link__more" id="GETDICT_BUTTON_TEXT_1">Learn more</span>
 									</div>
 								</a>
 							</li>
@@ -361,19 +333,6 @@
 	</div>
 </div>
 
-<nav class="box__nav--footer">
-	<div class="wraparea">
-		<ul>
-			<li><a href="main.html">SFF 2021</a></li>
-			<li><a href="live.html">Live</a></li>
-			<li><a href="sessions.html">Sessions</a></li>
-			<li><a href="networking.html">Networking</a></li>
-			<li><a href="registration.html">Registration</a></li>
-			<li><a href="favorites.html">Favorites</a></li>
-		</ul>
-	</div>
-</nav>
-
 <button type="button" class="button__gotop"><span class="for-a11y">Top</span></button>
 
 <footer class="footer">
@@ -390,5 +349,31 @@
 <script type="text/javascript" src="style/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="style/js/swiper.min.js"></script>
 <script type="text/javascript" src="style/js/ui.js"></script>
+<!-- https://github.com/NikitchenkoSergey/circle-progress-bar : 참고 -->
+<!-- https://www.npmjs.com/package/react-gradient-progress : React version -->
+<script src="style/js/circle-progress-bar.min.js"></script>
+<script>
+	var liveChart = document.getElementById('liveChart');
+	var heightRatio = 1;
+	liveChart.height = liveChart.width * heightRatio;
+	var radius = (liveChart.width / 2) - 4;
+	var circleProgressBar = new CircleProgressBar(liveChart, {
+		colors: ['#e33e2d','#f48321'],
+		lineWidth: 8,
+		radius : radius,
+		frameStep : 0.05 // progress 속도
+	})
+    $(window).scroll( function(){
+		var time = setTimeout(function(){
+			clearTimeout(time);
+			var posElement = $('#liveChart').offset().top;
+			var bottom_of_window = $(window).scrollTop() + $(window).height();
+			if( bottom_of_window > posElement ){
+				circleProgressBar.setValue(0.85); // 실행 : Page Scroll이 해당 위치 왔을 때 원형 프로그래스 바 인터렉션
+				// setValue 0.85 => 65%
+			}
+		},500); 
+    });
+</script>
 </body>
 </html>
