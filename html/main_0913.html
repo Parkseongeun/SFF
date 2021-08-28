@@ -12,7 +12,7 @@
 <body>
 
 <header class="header">
-    <div class="wraparea">
+	<div class="wraparea">
 		<h1 class="logo"><a href="main.html"><strong>Samsung Foundry Forum</strong> 2021</a></h1>
 		<nav class="box__nav--header">
 			<div class="box__inner">
@@ -22,16 +22,33 @@
 					<li><a href="networking.html" id="GETDICT_PAGE_TEXT_3">Networking</a></li>
 					<li><a href="registration.html" id="GETDICT_PAGE_TEXT_4">Registration</a></li>
 				</ul>
+				<div class="box__lang">
+					<a href="#" class="link__lang"><span class="for-a11y">Language</span></a>
+					<div class="list">
+						<a href="#" class="kr on"><span>KR</span></a>
+						<a href="#" class="en"><span>EN</span></a>
+						<a href="#" class="cn"><span>CN</span></a>
+						<a href="#" class="jp"><span>JP</span></a>
+					</div>
+				</div>
 				<button type="button" class="button__close"><span class="for-a11y">Close</span></button>
 			</div>
 		</nav>
 		<div class="box__link">
-			<a href="#" class="link__live"><span class="for-a11y">Live</span></a>
+			<!-- <a href="#" class="link__live"><span class="for-a11y">Live</span></a> -->
 			<a href="mypage.html" class="link__my"><span class="for-a11y">Mypage</span></a>
-			<a href="#" class="link__lang"><span class="for-a11y">Language</span></a>
+			<div class="box__lang">
+				<a href="#" class="link__lang"><span class="for-a11y">Language</span></a>
+				<div class="list">
+					<a href="#" class="kr on"><span>KR</span></a>
+					<a href="#" class="en"><span>EN</span></a>
+					<a href="#" class="cn"><span>CN</span></a>
+					<a href="#" class="jp"><span>JP</span></a>
+				</div>
+			</div>
 			<button type="button" class="button__gnb"><span class="for-a11y">Gnb open</span></button>
 		</div>
-    </div>
+	</div>
 </header>
 
 <div class="container">
@@ -330,7 +347,6 @@
 			</div>
 		</div>
 	</article>
-	</div>
 </div>
 
 <button type="button" class="button__gotop"><span class="for-a11y">Top</span></button>
@@ -358,7 +374,7 @@
 	liveChart.height = liveChart.width * heightRatio;
 	var radius = (liveChart.width / 2) - 4;
 	var circleProgressBar = new CircleProgressBar(liveChart, {
-		colors: ['#e33e2d','#f48321'],
+		colors: ['#e33e2d','#f48321','#e33e2d'],
 		lineWidth: 8,
 		radius : radius,
 		frameStep : 0.05 // progress 속도

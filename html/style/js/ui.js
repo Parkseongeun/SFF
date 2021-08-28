@@ -34,7 +34,7 @@ window.onload = function(){
     inputEvent();
     if($('form').find(':input')[0]!==undefined){
       $(':focus').blur();
-      $('form').find(':input')[0].focus();
+      //$('form').find(':input')[0].focus();
     }
 };
 var inputEvent = function() {
@@ -123,6 +123,12 @@ $(function(){
 	});
 	$('.button__gotop').click(function(){
 		$('html, body').animate( { scrollTop : 0 }, 400 );
+		return false;
+	});
+
+	// 공통 - GNB 언어선택
+	$('.link__lang').click(function(){
+		$(this).parent('.box__lang').toggleClass('active');
 		return false;
 	});
 
