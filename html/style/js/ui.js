@@ -148,11 +148,6 @@ $(function(){
 		$('body').removeClass('js-scroll-fixed');
 	});
 
-	// Networking + 버튼
-	$('.button__networking').click(function(){
-		$(this).siblings('.text__networking').toggleClass('js-active');
-	});
-
 	// Message 수정/삭제
 	$('.button__contact').click(function(){
 		$(this).siblings('.layer__setting').toggleClass('js-active');
