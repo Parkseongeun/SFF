@@ -25,7 +25,8 @@
 }
 @font-face{
 	font-family:'SamsungSharpSans';font-weight:normal;font-style:normal;
-	src:url("../fonts/SamsungSharpSans-Regular.eot");
+	src:url("../fonts/SamsungSharpSans-Regular.eot"),
+		url("../fonts/SamsungSharpSans-Regular.eot?#iefix") format('embedded-opentype');
 	src:
 	url("../fonts/SamsungSharpSans-Regular.woff2") format("woff2"),
 	url("../fonts/SamsungSharpSans-Regular.woff") format("woff"),
@@ -33,7 +34,8 @@
 }
 @font-face{
 	font-family:'SamsungSharpSans';font-weight:500;font-style:normal;
-	src:url("../fonts/SamsungSharpSans-Medium.eot");
+	src:url("../fonts/SamsungSharpSans-Medium.eot"),
+		url("../fonts/SamsungSharpSans-Medium.eot?#iefix") format('embedded-opentype');
 	src:
 	url("../fonts/SamsungSharpSans-Medium.woff2") format("woff2"),
 	url("../fonts/SamsungSharpSans-Medium.woff") format("woff"),
@@ -41,7 +43,8 @@
 }
 @font-face{
 	font-family:'SamsungSharpSans';font-weight:bold;font-style:normal;
-	src:url("../fonts/SamsungSharpSans-Bold.eot");
+	src:url("../fonts/SamsungSharpSans-Bold.eot"),
+		url("../fonts/SamsungSharpSans-Bold.eot?#iefix") format('embedded-opentype');
 	src:
 	url("../fonts/SamsungSharpSans-Bold.woff2") format("woff2"),
 	url("../fonts/SamsungSharpSans-Bold.woff") format("woff"),
