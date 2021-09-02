@@ -54,7 +54,7 @@ img{max-width:100%}
 .link{color:#00aef1}
 .link:hover{text-decoration:underline}
 .box__image{overflow:hidden;position:relative;display:inline-block;width:100%;height:0;padding-top:100%}
-.box__image img{position:absolute;top:0;left:50%;max-width:none;height:100%;-webkit-transform:translateX(-50%);transform:translateX(-50%);-webkit-transition:-webkit-transform .2s cubic-bezier(.165,.84,.44,1);transition:transform .2s cubic-bezier(.165,.84,.44,1)}
+.box__image img{position:absolute;top:0;left:50%;max-width:none;width:100%;height:100%;-webkit-transform:translateX(-50%);transform:translateX(-50%);-webkit-transition:-webkit-transform .2s cubic-bezier(.165,.84,.44,1);transition:transform .2s cubic-bezier(.165,.84,.44,1)}
 .box__image:hover img{-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transform:scale(1.05) translateX(-47.5%);transform:scale(1.05) translateX(-47.5%)}
 .text-center{text-align:center}
 @media (max-width:1419px){
@@ -464,7 +464,7 @@ input[type="checkbox"],input[type=radio]{margin:0 0 -28px 0;padding:0;opacity:0;
 input[type="checkbox"] + label, input[type=radio] + label{display:block;float:left;background:transparent;word-wrap:break-word;word-break:break-word;cursor:pointer}
 input[type="checkbox"] + label, input[type=radio] + label{font-size:18px;font-weight:500;line-height:1.5;color:#252525}
 input[type="checkbox"] + label > span,input[type=radio] + label > span{display:inline-block;width:20px;height:20px;margin:2px 13px 10px 0;border-radius:100%;vertical-align:middle}
-input[type="checkbox"] + label > span{margin-right:20px}
+input[type="checkbox"] + label > span{margin-right:20px;border-radius:4px}
 input[type=radio] + label > span{margin-right:20px;margin-left:0px;top:3px}
 input[type="checkbox"] + label > span, input[type=radio] + label > span{position:absolute;top:0;left:4px;background-color:transparent;border:1px solid #8f8f8f;-webkit-box-sizing:border-box;box-sizing:border-box}
 input[type="checkbox"]:checked + label > span{background-color:#3e91ff;border-color:#3e91ff}
@@ -513,10 +513,10 @@ form .text-notice{padding-top:12px;font-size:18px;line-height:1.77;color:#000}
 @media (max-width:1419px){
 .registwrap{padding:60px 24px 80px}
 .form-group-file .box__files-image img{width:80px;height:80px}
-.form-group-file .box__files{-webkit-flex:none;flex:none;height:38px}
+.form-group-file .box__files{-webkit-flex:none;flex:none;height:4vw}
 .box__files .button{width:100px}
 .box__files .button__delete{right:110px;top:4px}
-.box__files .upload-name{width:auto}
+.box__files .upload-name{font-size:1.7vw}
 }
 @media (max-width:768px){
 .registwrap{padding:10vw 12px 10vw}
@@ -530,7 +530,7 @@ form .text-notice{font-size:3.5vw}
 input[type="checkbox"]+label,
 input[type="radio"]+label{padding-left:6.5vw;font-size:3.5vw}
 input[type="checkbox"] + label > span,
-input[type=radio] + label > span{width:4vw;height:4vw;margin:0.2vw 0.4vw 0.4vw 0}
+input[type=radio] + label > span{width:4.2vw;height:4.2vw;margin:0.2vw 0.4vw 0.4vw 0}
 input[type="checkbox"]:checked + label > span:after{left:1.3vw;top:0.6vw;width:1.2vw;height:2vw}
 input[type=radio]:checked + label > span:after{left:0.8vw;top:0.8vw;width:2vw;height:2vw}
 .form-control{margin:6vw 0 2vw 0}
@@ -546,7 +546,8 @@ input[type=radio]:checked + label > span:after{left:0.8vw;top:0.8vw;width:2vw;he
 .inline-form-group .form-checkbox{margin:0 7vw 2vw 0}
 .form-group-file{display:block;-webkit-display:block;margin-top:8vw}
 .form-group-file + .form-group{margin-top:8vw}
-.box__files .upload-name{font-size:4vw}
+.form-group-file .box__files{height:10vw}
+.box__files .upload-name{width:auto;font-size:4vw}
 .form-group-file--confirm > label{max-width:23vw}
 .form-group-file--confirm .box__files-image img{width:25vw;height:25vw}
 .box__files .button{height:8vw;line-height:8vw;width:0;padding:0 2vw}
