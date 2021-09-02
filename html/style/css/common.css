@@ -365,9 +365,11 @@ h3 + .text__info{font-size:3.5vw}
 .box__article--keynote .box__content{width:100%}
 .list__keynote:after{content:'';clear:both;display:block}
 .list__keynote li{float:left;width:calc(50% - 7px);margin-bottom:40px}
-.list__keynote li + li{margin-left:14px}
+.list__keynote li:nth-child(even){margin-left:14px}
+.list__keynote li:nth-child(odd){margin-left:0 !important}
 .list__keynote.list--col3 li{width:calc(33.34% - 14px)}
-.list__keynote.list--col3 li:nth-child(3n+1){margin-left:0}
+.list__keynote.list--col3 li:nth-child(odd){margin-left:14px !important}
+.list__keynote.list--col3 li:nth-child(3n+1){margin-left:0 !important}
 .box__card--keynote .box__image{overflow:hidden;display:block;width:100%;padding-top:240px;border-radius:20px}
 .box__card--keynote .box__image img{width:100%;height:auto;min-height:100%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
 .box__card--keynote .box__image:hover img{-webkit-transform:scale(1.05) translateX(-47.5%) translateY(-47.5%);transform:scale(1.05) translateX(-47.5%) translateY(-47.5%)}
@@ -387,6 +389,7 @@ h3 + .text__info{font-size:3.5vw}
 .box__article--keynote .box__title h2 strong{font-size:3.3vw}
 .box__article--keynote .box__title > span{font-size:1.6vw}
 .list__keynote.list--col3 li{width:calc(33.34% - 10px)}
+.list__keynote.list--col3 li:nth-child(odd){margin-left:10px !important}
 .box__card--keynote .box__image{padding-top:16vw}
 .box__card--keynote .text__session{margin-top:2vw;font-size:2vw}
 .box__card--keynote .text__name{font-size:1.8vw}
@@ -411,7 +414,9 @@ h3 + .text__info{font-size:3.5vw}
 .list__keynote li + li + li{margin-top:20px}
 .list__keynote li:nth-child(even){margin-left:15px}
 .list__keynote li:nth-child(odd){margin-left:0 !important}
-.list__keynote.list--col3 li:nth-child(3n+1){margin-left:15px}
+.list__keynote.list--col3 li:nth-child(odd){margin-left:0 !important}
+.list__keynote.list--col3 li:nth-child(3n+1){margin-left:15px !important}
+.list__keynote.list--col3 li:first-child{margin-left:0 !important}
 .box__card--keynote .box__image{padding-top:60%;border-radius:3vw}
 .box__card--keynote .text__session{margin-top:3vw;font-size:3.5vw}
 .box__card--keynote .text__name{margin-top:2vw;font-size:3vw}
