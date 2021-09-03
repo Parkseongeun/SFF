@@ -515,20 +515,23 @@ form .text-notice{padding-top:12px;font-size:16px;color:#000}
 .form-group-select:after{transform:rotate(-180deg);-webkit-transform:rotate(-180deg);content:"";position:absolute;right:0;top:12px;overflow:hidden;font-size:12px;line-height:1.2;z-index:-1;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:6px solid #9c9c9c}
 .form-group-select.js-focus:after{transform:rotate(0deg);-webkit-transform:rotate(0deg);border-bottom-color:#0072de}
 .form-group-select.js-focus.one-error:after{border-bottom-color:inherit}
-.form-group-file{display:-webkit-flex;display:flex}
-.form-group-file > label{-webkit-flex:1;flex:1}
+.form-group-file{display:-webkit-flex;display:flex;align-items:center}
+.form-group-file > label{-webkit-flex:1;flex:1;vertical-align:middle}
 .form-group-file .box__files{-webkit-flex:1;flex:1;position:relative;border-bottom:1px solid #8f8f8f;height:44px}
 .form-group-file + .form-group{margin-top:40px}
 .form-group-file--confirm{display:block;-webkit-display:block}
 .form-group-file--confirm > label{-webkit-flex:none;flex:none;display:inline-block;max-width:110px;vertical-align:middle}
 .form-group-file .box__files-image{display:inline-block;vertical-align:middle;margin-right:25px;-webkit-flex:none;flex:none}
 .form-group-file .box__files-image img{display:inline-block;width:110px;height:110px;border-radius:50vw}
-.form-group-file .box__files-image + .box__files{margin-top:30px}
 .box__files .button{position:absolute;top:0;right:0;font-weight:600;width:148px}
 .box__files input[type="file"]{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
 .box__files .upload-name{display:inline-block;width:380px;padding:.5em .75em;font-size:20px;color:#8f8f8f;vertical-align:middle;border:none;-webkit-appearance:none;-moz-appearance:none;appearance:none}
 .box__files .upload-name:disabled{background-color:transparent}
 .box__files .button__delete{position:absolute;top:10px;right:160px;width:19px;height:19px;background:url(../../images/common/ico_delete.png) no-repeat 0 0;background-size:100% auto}
+.inline-form-group .form-radio--avatar{margin:0;width:19%;margin-bottom:20px;text-align:center}
+.inline-form-group .form-radio--avatar input[type="radio"]+label{padding-left:0;padding-top:35px}
+.inline-form-group .form-radio--avatar input[type="radio"]+label span{left:50%;margin-left:-10px;margin-right:0}
+.inline-form-group .form-radio--avatar input[type="radio"]+label img{border-radius:50vh;width:106px;height:106px}
 .box_agreement .text-right{margin-bottom:5px;padding-right:20px;text-align:right;font-size:20px;color:#000}
 .box_agreement .box__form{padding:40px 42px 45px;background-color:#fff;border:1px solid #e6e6e6;border-radius:20px}
 .box_agreement .box__form-control{margin-top:10px;display:-webkit-flex;display:flex;justify-content:space-between;flex-direction:row;width:100%}
@@ -537,11 +540,13 @@ form .text-notice{padding-top:12px;font-size:16px;color:#000}
 .box_agreement .box__form-control .form-checkbox{-webkit-flex:none;flex:none;float:right}
 @media (max-width:1419px){
 .registwrap{padding:60px 24px 80px}
-.form-group-file .box__files-image img{width:80px;height:80px}
+.form-group-file .box__files-image img{width:8.538vh;height:8.538vh}
 .form-group-file .box__files{-webkit-flex:none;flex:none;height:4vw}
-.box__files .button{width:100px}
-.box__files .button__delete{right:110px;top:4px}
-.box__files .upload-name{font-size:1.7vw}
+.box__files .button{width:11vw}
+.box__files .button__delete{width:1.5vw;height:1.5vw;right:12vw;top:1.2vw}
+.box__files .upload-name{width:28vw;font-size:1.7vw}
+.inline-form-group .form-radio--avatar input[type="radio"]+label{max-width:90%}
+.inline-form-group .form-radio--avatar input[type="radio"]+label img{width:8.538vh;height:8.538vh}
 }
 @media (max-width:768px){
 .registwrap{padding:10vw 12px 10vw;min-height:-webkit-calc(100vh - 36px);min-height:calc(100vh - 36vw)}
@@ -557,7 +562,7 @@ input[type="radio"]+label{padding-left:6.5vw;font-size:3.5vw}
 input[type="checkbox"] + label > span,
 input[type=radio] + label > span{width:4.2vw;height:4.2vw;margin:0.2vw 0.4vw 0.4vw 0}
 input[type="checkbox"]:checked + label > span:after{left:1.3vw;top:0.6vw;width:1.2vw;height:2vw}
-input[type=radio]:checked + label > span:after{left:0.8vw;top:0.8vw;width:2vw;height:2vw}
+input[type=radio]:checked + label > span:after{left:50%;top:50%;width:2vw;height:2vw;margin:-1vw 0 0 -1vw}
 .form-control{margin:6vw 0 2vw 0}
 .form-control > input,
 .form-control > select{height:9vw;font-size:4vw}
@@ -573,9 +578,14 @@ input[type=radio]:checked + label > span:after{left:0.8vw;top:0.8vw;width:2vw;he
 .form-group-file + .form-group{margin-top:8vw}
 .form-group-file .box__files{height:10vw}
 .box__files .upload-name{padding-left:0;width:auto;font-size:4vw}
+.form-group-file .box__files-image img{width:12.48vw;height:12.48vw}
 .form-group-file--confirm > label{max-width:23vw}
-.form-group-file--confirm .box__files-image img{width:25vw;height:25vw}
 .box__files .button{height:8vw;line-height:8vw;width:0;padding:0 2vw}
+.box__files .button__delete{width:4vw;height:4vw;right:26vw;top:1.5vw}
+.inline-form-group .form-radio--avatar{margin:0 0 2vw 0;width:17.3%}
+.inline-form-group .form-radio--avatar input[type="radio"]+label{padding-top:6vw}
+.inline-form-group .form-radio--avatar input[type="radio"]+label span{margin-left:-2.1vw}
+.inline-form-group .form-radio--avatar input[type="radio"]+label img{width:100%;height:auto}
 .box_agreement .text-right{margin-bottom:1vw;padding-right:4vw;font-size:4vw}
 .box_agreement .box__form{padding:5.4vw 6vw 6vw}
 .box_agreement .box__form-control{overflow:hidden;clear:both;display:block;-webkit-display:block;margin-top:2vw}
