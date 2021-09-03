@@ -241,15 +241,15 @@ h3 + .text__info{font-size:3.5vw}
 .list__schedule .box__zone .text__closed{display:block;font-size:25px;font-weight:normal;color:#ababab}
 .liveChart-holder{position:absolute;top:-20px;left:-20px;right:-20px;bottom:-20px}
 .liveChart-holder canvas{width:100%}
-.box__tab-session{position:relative;padding:145px 0 0}
+.box__tab-session{position:relative;padding:105px 0 0}
 .box__tab-session .swiper-pagination{position:absolute;top:0;left:0;right:0;display:-webkit-flex;display:flex;flex-wrap:nowrap;width:100%;height:63px;border-radius:50vh;border:1px solid #d6d6d6;-webkit-box-sizing:border-box;box-sizing:border-box}
 .box__tab-session .swiper-pagination-bullet{position:relative;top:0;left:0;-webkit-flex:1;flex:1;height:63px;margin:0 !important;text-align:center;line-height:61px;background-color:transparent;font-size:24px;font-weight:bold;color:#000;opacity:1;border-radius:50vh;-webkit-box-sizing:border-box;box-sizing:border-box}
 .box__tab-session .swiper-pagination-bullet-active{top:-1px;color:#fff;background:#000}
 .list__speakers{padding-top:10px;background-color:#fff}
 .list__speakers::after{content:'';display:block;clear:both}
-.list__speakers li{float:left;width:50%;margin-bottom:20px;padding-right:10px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.list__speakers li{float:left;width:50%;margin-top:20px;padding-right:10px;-webkit-box-sizing:border-box;box-sizing:border-box}
 .box__card--speaker{display:table;width:100%}
-.box__card--speaker .box__image{display:table-cell;width:176px;height:0;padding-top:205px;border-radius:20px;vertical-align:top}
+.box__card--speaker .box__image{display:table-cell;width:176px;height:0;padding-top:196px;border-radius:20px;vertical-align:top}
 .box__card--speaker .box__info{display:table-cell;padding-left:25px;vertical-align:top}
 .box__card--speaker .box__info .text__session{display:block;padding-top:32px;font-size:24px;font-weight:bold;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%}
 .box__card--speaker .box__info .text__name{display:block;padding-top:4px;font-size:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%}
@@ -295,11 +295,11 @@ h3 + .text__info{font-size:3.5vw}
 .list__schedule .box__zone .text__closed,
 .list__schedule .box__zone .text__streaming{font-size:1.75vw}
 .liveChart-holder{top:-10px;left:-10px;right:-10px;bottom:-10px}
-.box__tab-session{padding:9vw 0 0}
+.box__tab-session{padding:7vw 0 0}
 .box__tab-session .swiper-pagination{height:5vw}
 .box__tab-session .swiper-pagination-bullet{height:5vw;font-size:1.75vw;line-height:5vw}
 .list__speakers{padding-top:0}
-.list__speakers li{margin-bottom:5vw}
+.list__speakers li{margin-bottom:4vw}
 .box__card--speaker .box__image{width:17vw;padding-top:18vw}
 .box__card--speaker .box__info{padding-left:2.5vw}
 .box__card--speaker .box__info .text__session{font-size:1.75vw}
@@ -316,8 +316,8 @@ h3 + .text__info{font-size:3.5vw}
 }
 @media (max-width:768px){
 .box__article--visual{padding:0}
-.box__article--visual .wraparea{padding-top:100%}
-.box__article--visual .text__visual{left:8vw;top:20vw}
+.box__article--visual .wraparea{padding-top:148.56%}
+.box__article--visual .text__visual{left:8vw;top:67vw}
 .box__article--visual .text__visual .text1{font-size:9vw}
 .box__article--visual .text__visual .text2{font-size:3.5vw;letter-spacing:-0.5px}
 .box__article--visual .text__visual .text3{font-size:3.5vw}
@@ -336,13 +336,13 @@ h3 + .text__info{font-size:3.5vw}
 .list__schedule .box__zone .text__closed{font-size:3vw}
 .list__schedule .box__zone .text__streaming{font-size:4vw}
 .liveChart-holder{top:-3vw;left:-3vw;right:-3vw;bottom:-3vw}
-.box__tab-session{padding-top:16vw}
+.box__tab-session{padding-top:10vw}
 .box__tab-session .swiper-pagination{height:9vw}
 .box__tab-session .swiper-pagination-bullet{height:9vw;font-size:3vw;line-height:9vw}
 .list__speakers li{width:100%}
-.box__card--speaker .box__image{width:30vw;padding-top:36.25vw}
+.box__card--speaker .box__image{width:30vw;padding-top:32vw}
 .box__card--speaker .box__info{padding-left:3.5vw}
-.box__card--speaker .box__info .text__session{font-size:4.2vw}
+.box__card--speaker .box__info .text__session{padding-top:5vw;font-size:4.2vw}
 .box__card--speaker .box__info .text__name{font-size:3.7vw}
 .box__card--speaker .box__info .text__affiliation{font-size:3.05vw}
 .box__card--speaker .box__info .text__position{font-size:3.05vw}
