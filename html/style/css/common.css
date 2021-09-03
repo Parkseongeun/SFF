@@ -28,7 +28,7 @@ img{max-width:100%}
 
 
 /* common */
-.button{display:inline-block;-webkit-box-sizing:border-box;box-sizing:border-box;min-width:140px;height:38px;padding:0 24px;border-radius:50vh;font-family:'SamsungOne';font-size:14px;font-weight:500;line-height:38px;color:#000;letter-spacing:0;background-color:#fff;border:1px solid #222;transition:background-color 0.4s;text-align:center;cursor:pointer}
+.button{display:inline-block;-webkit-box-sizing:border-box;box-sizing:border-box;min-width:140px;height:38px;padding:0 24px;border-radius:50vh;font-family:'SamsungOne';font-size:14px;font-weight:500;line-height:38px;color:#000;letter-spacing:0;background-color:#fff;border:1px solid #444;transition:background-color 0.4s;text-align:center;cursor:pointer}
 .button:hover,
 .button:focus{border-color:#555;color:#fff;background-color:#000}
 .button:disabled{border-color:#ddd;background-color:#fff;color:#ddd;cursor:auto}
@@ -248,14 +248,14 @@ h3 + .text__info{font-size:3.5vw}
 .list__speakers{padding-top:10px;background-color:#fff}
 .list__speakers::after{content:'';display:block;clear:both}
 .list__speakers li{float:left;width:50%;margin-top:20px;padding-right:10px;-webkit-box-sizing:border-box;box-sizing:border-box}
-.box__card--speaker{display:table;width:100%}
+.box__card--speaker{display:table;width:100%;table-layout:fixed}
 .box__card--speaker .box__image{display:table-cell;width:176px;height:0;padding-top:196px;border-radius:20px;vertical-align:top}
 .box__card--speaker .box__info{display:table-cell;padding-left:25px;vertical-align:top}
-.box__card--speaker .box__info .text__session{display:block;padding-top:32px;font-size:24px;font-weight:bold;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%}
+.box__card--speaker .box__info .text__session{display:block;padding-top:9px;font-size:24px;font-weight:bold;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%}
 .box__card--speaker .box__info .text__name{display:block;padding-top:4px;font-size:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%}
 .box__card--speaker .box__info .text__affiliation{display:block;padding-top:5px;font-size:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%}
 .box__card--speaker .box__info .text__position{display:block;padding-top:5px;font-size:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%}
-.box__card--speaker .box__info .link__more{margin-top:30px;margin-left:2px}
+.box__card--speaker .box__info .link__more{margin-top:25px;margin-left:2px}
 .box__article--networking{background-color:#eee;margin-top:100px}
 .box__article--networking h2{padding-top:74px}
 .box__networking{padding:67px 0 110px;margin-bottom:-110px}
@@ -300,7 +300,7 @@ h3 + .text__info{font-size:3.5vw}
 .box__tab-session .swiper-pagination-bullet{height:5vw;font-size:1.75vw;line-height:5vw}
 .list__speakers{padding-top:0}
 .list__speakers li{margin-bottom:4vw}
-.box__card--speaker .box__image{width:17vw;padding-top:18vw}
+.box__card--speaker .box__image{width:16vw;padding-top:18.5vw}
 .box__card--speaker .box__info{padding-left:2.5vw}
 .box__card--speaker .box__info .text__session{font-size:1.75vw}
 .box__card--speaker .box__info .text__name{font-size:1.75vw;padding-top:0.5vw}
@@ -342,7 +342,7 @@ h3 + .text__info{font-size:3.5vw}
 .list__speakers li{width:100%}
 .box__card--speaker .box__image{width:30vw;padding-top:32vw}
 .box__card--speaker .box__info{padding-left:3.5vw}
-.box__card--speaker .box__info .text__session{padding-top:5vw;font-size:4.2vw}
+.box__card--speaker .box__info .text__session{padding-top:3vw;font-size:4.2vw}
 .box__card--speaker .box__info .text__name{font-size:3.7vw}
 .box__card--speaker .box__info .text__affiliation{font-size:3.05vw}
 .box__card--speaker .box__info .text__position{font-size:3.05vw}
@@ -866,7 +866,7 @@ input[type=radio]:checked + label > span:after{left:0.8vw;top:0.8vw;width:2vw;he
 .box__card--attendee .text__attendee{-webkit-flex:none;flex:none;display:inline-block;width:133px;font-size:14px;color:#9b9b9b;text-align:center}
 .box__article--attendee .link__more{display:block;width:160px;margin:50px auto 0}
 .box__search-field{position:relative;padding-right:148px}
-.box__search-field .form-control{display:block;width:100%;height:38px;margin-top:10px;padding:0 20px;border:1px solid #222;background-color:#fff;border-radius:50vh;-webkit-box-sizing:border-box;box-sizing: border-box}
+.box__search-field .form-control{display:block;width:100%;height:38px;margin-top:10px;padding:0 20px;border:1px solid #444;background-color:#fff;border-radius:50vh;-webkit-box-sizing:border-box;box-sizing: border-box}
 .box__search-field .form-control:focus{outline:none}
 .box__search-field .button__search{position:absolute;top:0;right:0}
 .box__search-index{margin:0 -6px;padding:20px 0 30px;font-size:0;line-height:0}
