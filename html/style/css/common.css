@@ -98,27 +98,27 @@ img{max-width:100%}
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 body,html,.wraparea{min-width:1420px}
 }
-h2{font-family:'SamsungSharpSans';padding:84px 0 30px;font-size:54px;letter-spacing:-1.55px}
+h2{font-family:'SamsungSharpSans';padding:60px 0 20px;font-size:54px;letter-spacing:-1.55px}
 h2 + .text__info{margin-top:-24px;margin-bottom:28px;font-size:20px;color:#000;word-break:break-word}
-h3{padding:94px 0 11px;font-size:40px;font-weight:bold}
-h3 + .text__info{font-size:18px;line-height:1.77;color:#000}
+h3{padding:60px 0 10px;font-size:40px;font-weight:bold}
+h3 + .text__info{font-size:18px;line-height:1.6;color:#000}
 .button__gotop{display:none;position:fixed;width:48px;height:48px;bottom:95px;right:20px;z-index:100;background:url(../../images/common/ico_gotop.png) no-repeat 0 0;background-size:100% auto}
 .button__gotop:hover,
 .button__gotop:focus{border-color:#555;color:#fff;background-color:rgba(0,0,0,0.05)}
 .js-scroll-fixed{overflow:hidden;height:100%}
 @media (max-width:1419px){
 .box__article{padding:0 24px}
-h2{font-size:4.5vw;padding:5vw 0 2vw;letter-spacing:-0.5px}
+h2{font-size:4vw;padding:4vw 0 1.5vw;letter-spacing:-0.5px}
 h2 + .text__info{margin-top:-10px;margin-bottom:18px;font-size:1.75vw}
-h3{font-size:30px;padding:55px 0 7px}
+h3{font-size:30px;padding:4vw 0 1.2vw}
 h3 + .text__info{font-size:1.75vw}
 }
 @media (max-width:768px){
 .container{padding-bottom:15vw}
-.box__article{padding:0 12px}
-h2{font-size:8.78vw;padding:17vw 0 4vw}
+.box__article{padding:0 5vw}
+h2{font-size:8vw;padding:9vw 0 4vw;line-height:1.33}
 h2 + .text__info{margin-top:-3vw;margin-bottom:5vw;font-size:3.5vw}
-h3{font-size:7vw;padding:12vw 0 2vw}
+h3{font-size:7vw;padding:9vw 0 2vw}
 h3 + .text__info{font-size:3.5vw}
 .button__gotop{width:7.5vw;height:7.5vw;bottom:29.75vw;right:2.62vw}
 }
@@ -204,30 +204,30 @@ h3 + .text__info{font-size:3.5vw}
 /* main */
 .box__article--visual .wraparea{position:relative;height:0;padding-top:600px;background-color:#000}
 .box__article--visual #visualVideo{position:absolute;z-index:0;top:0;left:0;width:100%;height:100%}
-.box__article--visual .text__visual{position:absolute;z-index:2;top:87px;left:95px}
-.box__article--visual .text__visual .text1{font-family:'SamsungSharpSans';font-size:81px;font-weight:bold;color:#fff;line-height:1.17;letter-spacing:1.5px}
+.box__article--visual .text__visual{position:absolute;z-index:2;top:87px;left:100px}
+.box__article--visual .text__visual .text1{font-family:'SamsungSharpSans';font-size:81px;font-weight:bold;color:#fff;line-height:1.13;letter-spacing:1.5px}
 .box__article--visual .text__visual .text1 span{font-weight:normal;color:#fff}
 .box__article--visual .text__visual .text2{display:inline-block;margin-top:8px;font-family:'SamsungSharpSans';font-size:25.6px;font-weight:300;color:#fff;letter-spacing:1.8px}
-.box__article--visual .text__visual .text3{display:inline-block;margin-top:23px;font-family:'SamsungSharpSans';font-size:25.6px;font-weight:300;color:#fff;letter-spacing:1.8px}
+.box__article--visual .text__visual .text3{display:inline-block;margin-top:6px;font-family:'SamsungSharpSans';font-size:25.6px;font-weight:300;color:#fff;letter-spacing:1.8px}
 .box__article--visual .text__visual .link__regist{width:172px;margin-top:22px;font-size:16px;font-weight:500}
 .list__overview li{display:table;margin-bottom:11px}
 .list__overview li::after{content:none;clear:both;display:block}
 .list__overview .text__title{float:left;position:relative;width:120px;padding-left:22px;-webkit-box-sizing:border-box;box-sizing:border-box;font-size:18px;font-weight:bold}
 .list__overview .text__title::before{content:'';position:absolute;top:8px;left:8px;width:4px;height:4px;background-color:#000;border-radius:50vh}
 .list__overview .text__cont{float:left;font-size:18px;color:#535353}
-.box__article--welcome h2{font-family:'SamsungOne';font-size:20px;font-weight:500;line-height:1.85;color:#000;letter-spacing:-0.3px}
-.box__article--welcome .text__info{padding:90px 0 0;font-size:20px;line-height:1.85;color:#000}
-.box__article--welcome h2 + .text__info{padding-top:15px;font-weight:normal;line-height:1.52;color:#000}
+.box__article--welcome h2{padding-left:100px;padding-right:100px;font-family:'SamsungOne';font-size:20px;font-weight:500;line-height:1.85;color:#000;letter-spacing:-0.3px}
+.box__article--welcome .text__info{padding:60px 100px 0;font-size:20px;line-height:1.6;color:#000}
+.box__article--welcome h2 + .text__info{padding-top:15px;font-weight:normal;line-height:1.6;color:#000}
 .text__opendate{position:relative;margin-top:40px;padding-left:102px}
 .text__opendate:before{content:'';position:absolute;top:0;left:0;width:79px;height:65px;background:url(../../images/main/ico_calendar.png) no-repeat 0 0;background-size:100% auto}
 .text__opendate .text__date{font-size:28px;font-weight:500;line-height:1.3em}
 .text__opendate .link{font-size:20px;color:#000}
 .text__opendate .link:hover{cursor:pointer}
-.box__article--schedule{margin-top:87px;padding:98px 0 93px;background-color:#f7f7f7}
-.box__article--schedule .wraparea{padding:0 110px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.box__article--schedule{margin-top:60px;padding:60px 0 100px;background-color:#f7f7f7}
+.box__article--schedule .wraparea{-webkit-box-sizing:border-box;box-sizing:border-box}
 .box__article--schedule h2{padding-top:0}
 .box__article--schedule h2 + .text__info{margin-top:-21px;margin-bottom:58px}
-.list__schedule{margin:0 -15px}
+.list__schedule{margin:0 100px}
 .list__schedule::after{content:'';display:block;clear:both}
 .list__schedule .list-item{position:relative;float:left;width:25%;padding:0 18px;-webkit-box-sizing:border-box;box-sizing:border-box}
 .list__schedule .box__zone{position:relative;display:-webkit-flex;display:flex;width:100%;height:0;padding-top:100%;-webkit-transition:-webkit-transform 0.4s;transition:transform 0.4s}
@@ -235,30 +235,31 @@ h3 + .text__info{font-size:3.5vw}
 .list__schedule .box__zone .box__inner{position:absolute;top:0;left:0;right:0;bottom:0;display:-webkit-flex;display:flex;flex-direction:column;justify-content:center;align-items:center;background-color:#fff;border-radius:50vh;border:5px solid #ececec}
 .list__schedule .box__zone p{width:200px;text-align:center;line-height:1.4}
 .list__schedule .box__zone p + p{padding-top:10px;margin-top:10px;border-top:2px dotted #c0c0c0}
-.list__schedule .box__zone .text__time{display:block;font-size:24px;font-weight:normal;color:#000;line-height:1.35}
-.list__schedule .box__zone .text__code{display:block;font-size:20px;font-weight:normal;color:#8f8f8f}
-.list__schedule .box__zone .text__streaming{display:block;font-size:31px;font-weight:bold;color:#e33d2d;letter-spacing:-1px;white-space:nowrap}
-.list__schedule .box__zone .text__closed{display:block;font-size:25px;font-weight:normal;color:#ababab}
-.liveChart-holder{position:absolute;top:-20px;left:-20px;right:-20px;bottom:-20px}
+.list__schedule .box__zone .text__time{display:block;font-size:21px;font-weight:normal;color:#000;line-height:1.35}
+.list__schedule .box__zone .text__code{display:block;font-size:19px;font-weight:normal;color:#8f8f8f}
+.list__schedule .box__zone .text__streaming{display:block;font-size:26px;font-weight:bold;color:#e33d2d;letter-spacing:-1px;white-space:nowrap}
+.list__schedule .box__zone .text__closed{display:block;font-size:22px;font-weight:normal;color:#ababab}
+.liveChart-holder{position:absolute;top:-16px;left:-16px;right:-16px;bottom:-16px}
 .liveChart-holder canvas{width:100%}
-.box__tab-session{position:relative;padding:105px 0 0}
+.box__article--sessions+.box__article--sessions{margin-top:60px}
+.box__tab-session{position:relative;padding:90px 0 0}
 .box__tab-session .swiper-pagination{position:absolute;top:0;left:0;right:0;display:-webkit-flex;display:flex;flex-wrap:nowrap;width:100%;height:63px;border-radius:50vh;border:1px solid #d6d6d6;-webkit-box-sizing:border-box;box-sizing:border-box}
-.box__tab-session .swiper-pagination-bullet{position:relative;top:0;left:0;-webkit-flex:1;flex:1;height:63px;margin:0 !important;text-align:center;line-height:61px;background-color:transparent;font-size:24px;font-weight:bold;color:#000;opacity:1;border-radius:50vh;-webkit-box-sizing:border-box;box-sizing:border-box}
+.box__tab-session .swiper-pagination-bullet{position:relative;top:0;left:0;-webkit-flex:1;flex:1;height:63px;margin:0 !important;text-align:center;line-height:61px;background-color:transparent;font-size:23px;font-weight:bold;color:#000;opacity:1;border-radius:50vh;-webkit-box-sizing:border-box;box-sizing:border-box}
 .box__tab-session .swiper-pagination-bullet-active{top:-1px;color:#fff;background:#000}
 .list__speakers{padding-top:10px;background-color:#fff}
+h3+.list__speakers{padding-top:0}
 .list__speakers::after{content:'';display:block;clear:both}
-.list__speakers li{float:left;width:50%;margin-top:20px;padding-right:10px;-webkit-box-sizing:border-box;box-sizing:border-box}
+.list__speakers li{float:left;width:50%;margin-top:20px;padding-right:30px;-webkit-box-sizing:border-box;box-sizing:border-box}
 .box__card--speaker{display:table;width:100%;table-layout:fixed}
 .box__card--speaker .box__image{display:table-cell;width:176px;height:0;padding-top:196px;border-radius:20px;vertical-align:top}
 .box__card--speaker .box__info{display:table-cell;padding-left:25px;vertical-align:top}
-.box__card--speaker .box__info .text__session{display:block;padding-top:9px;font-size:24px;font-weight:bold;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%}
+.box__card--speaker .box__info .text__session{display:block;padding-top:9px;font-size:23px;font-weight:bold;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%}
 .box__card--speaker .box__info .text__name{display:block;padding-top:4px;font-size:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%}
 .box__card--speaker .box__info .text__affiliation{display:block;padding-top:5px;font-size:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%}
 .box__card--speaker .box__info .text__position{display:block;padding-top:5px;font-size:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%}
 .box__card--speaker .box__info .link__more{margin-top:25px;margin-left:2px}
 .box__article--networking{background-color:#eee;margin-top:100px}
-.box__article--networking h2{padding-top:74px}
-.box__networking{padding:67px 0 110px;margin-bottom:-110px}
+.box__networking{padding:50px 0 90px;margin-bottom:-110px}
 .box__networking .link__more{display:block;width:140px;margin:60px auto 0}
 .list__networking-person{font-size:0;text-align:center}
 .list__networking-person li{display:inline-block;position:relative;width:116px;margin:15px 6px 0;vertical-align:top}
@@ -272,43 +273,45 @@ h3 + .text__info{font-size:3.5vw}
 .list__networking-person .box__info .link__info:hover{-webkit-transform:rotate(90deg);transform:rotate(90deg)}
 @media (max-width:1419px){
 .box__article--visual .wraparea{padding-top:42%}
-.box__article--visual .text__visual{top:4vw;left:7vw}
+.box__article--visual .text__visual{top:4vw;left:6vw}
 .box__article--visual .text__visual .text1{font-size:5vw}
 .box__article--visual .text__visual .text2{margin-top:1vw;font-size:2.2vw}
-.box__article--visual .text__visual .text3{margin-top:1vw;font-size:2.2vw}
-.box__article--visual .text__visual .link__regist{margin-top:2vw;width:16vw;font-size:1.3vw}
-.box__article--welcome .text__info{padding-top:6vw;font-size:1.75vw}
+.box__article--visual .text__visual .text3{display:block;margin-top:0;font-size:2.2vw}
+.box__article--visual .text__visual .link__regist{margin-top:0;width:16vw;font-size:1.3vw}
+.box__article--welcome .text__info{padding:5vw 6vw 0;font-size:1.75vw}
 .box__article--welcome h2{font-size:1.75vw}
 .box__article--welcome h2 + .text__info{padding-top:15px}
+.box__article--welcome .wraparea{padding:0}
 .text__opendate{margin-top:5vw;padding-left:10.75vw}
 .text__opendate:before{width:8vw;height:7vw}
 .text__opendate .text__date{font-size:2.5vw}
 .text__opendate .link{font-size:2vw}
-.box__article--schedule{padding:7vw 0}
-.box__article--schedule .wraparea{padding:0 3vw}
+.box__article--schedule{padding:5vw 24px}
 .box__article--schedule h2 + .text__info{margin-top:-10px;margin-bottom:40px}
-.list__schedule{margin:0 -5px}
+.list__schedule{margin:0 15px}
 .list__schedule .list-item{padding:0 1vw}
 .list__schedule .box__zone p{width:80%}
 .list__schedule .box__zone .text__time,
-.list__schedule .box__zone .text__code,
+.list__schedule .box__zone .text__code{font-size:1.5vw}
 .list__schedule .box__zone .text__closed,
 .list__schedule .box__zone .text__streaming{font-size:1.75vw}
+.box__article--sessions+.box__article--sessions{margin-top:4vw}
 .liveChart-holder{top:-10px;left:-10px;right:-10px;bottom:-10px}
 .box__tab-session{padding:7vw 0 0}
 .box__tab-session .swiper-pagination{height:5vw}
 .box__tab-session .swiper-pagination-bullet{height:5vw;font-size:1.75vw;line-height:5vw}
 .list__speakers{padding-top:0}
-.list__speakers li{margin-bottom:4vw}
-.box__card--speaker .box__image{width:16vw;padding-top:18.5vw}
+.list__speakers li{margin-top:1vw;margin-bottom:4vw}
+.box__card--speaker .box__image{width:16vw;padding-top:18vw}
 .box__card--speaker .box__info{padding-left:2.5vw}
 .box__card--speaker .box__info .text__session{font-size:1.75vw}
 .box__card--speaker .box__info .text__name{font-size:1.75vw;padding-top:0.5vw}
 .box__card--speaker .box__info .text__affiliation{font-size:1.5vw;padding-top:0.5vw}
 .box__card--speaker .box__info .text__position{font-size:1.5vw;padding-top:0.5vw}
 .box__card--speaker .box__info .link__more{margin-top:2vw}
-.box__article--networking{margin-top:6vw}
-.box__networking{padding:5vw 0 7vw}
+.box__article--networking{margin-top:4vw}
+.box__article--networking h2{padding-top:4vw}
+.box__networking{padding:5vw 0}
 .list__networking-person{margin:0 -20px}
 .list__networking-person li{width:10%;margin:0 3px}
 .list__networking-person .box__image{width:65px;padding-top:65px}
@@ -321,15 +324,16 @@ h3 + .text__info{font-size:3.5vw}
 .box__article--visual .text__visual .text1{font-size:9vw}
 .box__article--visual .text__visual .text2{font-size:3.5vw;letter-spacing:-0.5px}
 .box__article--visual .text__visual .text3{font-size:3.5vw}
-.box__article--visual .text__visual .link__regist{margin-top:2vw;width:30vw;font-size:3vw}
+.box__article--visual .text__visual .link__regist{margin-top:0;width:30vw;font-size:3vw}
 .box__article--welcome h2{padding:8vw 0 2vw;font-size:3.5vw;letter-spacing:-0.5px}
-.box__article--welcome .text__info{font-size:3.5vw}
+.box__article--welcome .text__info{padding:9vw 0 0;font-size:3.5vw;line-height:1.68}
 .text__opendate{margin-top:5vw;padding-left:12.75vw}
 .text__opendate:before{width:9vw;height:9vw}
 .text__opendate .text__date{font-size:3.5vw}
 .text__opendate .link{font-size:3vw}
-.box__article--schedule{margin-top:15vw;padding:4vw 0}
-.box__article--schedule .wraparea{padding:0 5vw}
+.box__article--schedule{margin-top:8vw;padding:9vw 5vw}
+.list__schedule{margin:0 5px}
+.list__speakers li{width:100%;margin:15px 0 0;padding-right:0}
 .list__schedule .list-item{width:50%;padding:0 2vw;margin-bottom:6vw}
 .list__schedule .box__zone .text__time{font-size:3vw}
 .list__schedule .box__zone .text__code{font-size:3vw}
@@ -339,7 +343,6 @@ h3 + .text__info{font-size:3.5vw}
 .box__tab-session{padding-top:10vw}
 .box__tab-session .swiper-pagination{height:9vw}
 .box__tab-session .swiper-pagination-bullet{height:9vw;font-size:3vw;line-height:9vw}
-.list__speakers li{width:100%}
 .box__card--speaker .box__image{width:30vw;padding-top:32vw}
 .box__card--speaker .box__info{padding-left:3.5vw}
 .box__card--speaker .box__info .text__session{padding-top:3vw;font-size:4.2vw}
@@ -347,6 +350,7 @@ h3 + .text__info{font-size:3.5vw}
 .box__card--speaker .box__info .text__affiliation{font-size:3.05vw}
 .box__card--speaker .box__info .text__position{font-size:3.05vw}
 .box__article--networking{margin-top:16vw}
+.box__article--networking h2{padding-top:9vw}
 .box__networking{padding:2vw 0 11vw;margin-bottom:-15vw}
 .box__networking .link__more{width:24vw;margin-top:10vw}
 .list__networking-person{margin:0 0}
@@ -356,7 +360,7 @@ h3 + .text__info{font-size:3.5vw}
 }
 
 /* Keynote */
-.box__player{position:relative;width:100%;height:0;padding-top:55%}
+.box__player{position:relative;width:100%;height:0;padding-top:42%}
 .box__player #player{position:absolute;top:0;left:0;width:100%;height:100%}
 .text__info + .list__speakers{margin-top:45px}
 .text__info--player{margin-top:20px}
@@ -370,7 +374,7 @@ h3 + .text__info{font-size:3.5vw}
 /* Sessions */
 .box__article--session{height:394px;padding:90px 0 0 80px;background:url(../../images/bg_session.jpg) no-repeat center top;background-size:cover;-webkit-box-sizing:border-box;box-sizing:border-box}
 .box__article--session h2{padding-top:0;color:#fff}
-.box__article--session h2 + .text__info{font-size:20px;line-height:1.6;max-width:560px;color:#fff}
+.box__article--session h2 + .text__info{font-size:20px;line-height:1.6;max-width:800px;color:#fff}
 .box__article--keynote{display:-webkit-flex;display:flex;padding-top:48px;margin:8px 0 0}
 .box__article--keynote + .box__article--keynote{padding-top:53px;border-top:1px solid #8f8f8f}
 .box__article--keynote:after{content:'';clear:both;display:block}
@@ -649,7 +653,7 @@ input[type=radio]:checked + label > span:after{left:50%;top:50%;width:2vw;height
 .box__article--myinfo .button-group .button{min-width:235px;height:44px;line-height:44px;font-size:18px}
 .box__article--myinfo .button-group .button+.button{margin-left:44px}
 .box__article--badges .text__info{float:left}
-.box__article--badges .box__badges{float:right}
+.box__article--badges .box__badges{float:right;margin-top:-50px}
 .box__article--badges .box__badges ul{overflow: hidden;}
 .box__article--badges .box__badges ul li{float:left;width:92px;margin:0 14px;text-align:center}
 .box__article--badges .box__badges ul li span{display:inline-block;position:relative;width:100%;padding-top:94px;font-size:18px;font-weight:500}
@@ -711,9 +715,10 @@ input[type=radio]:checked + label > span:after{left:50%;top:50%;width:2vw;height
 .box__article--myinfo .form__regist{padding:50px 50px 50px}
 .box__article--myinfo .button-group{padding-top:40px}
 .mypage .box__article h3 + .text__info{font-size:1.75vw}
+.box__article--badges .box__badges{float:none;margin-top:0}
+.box__article--badges .box__badges ul li{margin:0 28px 0 0}
 .box__article--badges .box__badges ul li span{font-size:1.75vw}
 .box__article--badges .text__info{float:none;margin-bottom:3vw}
-.box__article--badges .box__badges{float:none}
 .list__messages .list-item{width:93%;max-width:93%}
 .box__card--messages{padding-right:40px}
 .box__card--messages .box__info{max-width:140px}
@@ -744,7 +749,7 @@ input[type=radio]:checked + label > span:after{left:50%;top:50%;width:2vw;height
 .box__article--myinfo .link__logout{top:4vw;right:6vw;font-size:3.5vw}
 .box__article--myinfo .button-group .button{min-width:32vw;height:10vw;line-height:10vw;font-size:3.5vw}
 .box__article--myinfo .button-group .button+.button{margin-left:5vw}
-.mypage .box__networking{padding:10vw 0 10vw}
+.mypage .box__networking{padding:10vw 0}
 .mypage .box__article--networking .box__networking .link__more{margin-top:10vw}
 .box__article--badges .box__badges ul li{width:46px;margin:0 10px}
 .box__article--badges .box__badges ul li span{padding-top:46px;font-size:14px}
@@ -954,3 +959,6 @@ input[type=radio]:checked + label > span:after{left:50%;top:50%;width:2vw;height
 .layer__streaming .box__layer-footer{position:absolute;top:0;right:7vw;padding:10px;height:40px}
 .layer__streaming .box__layer-inner .button__closed{width:10vw;height:10vw;background:url(../../images/common/ico_close3.png) no-repeat 0 0;background-size:100% auto}
 }
+
+.box__player #visualVideo{position:absolute;top:0;left:0;width:100%;height:100%}
+.box__player #visualVideo video{width:100%;height:100%}
