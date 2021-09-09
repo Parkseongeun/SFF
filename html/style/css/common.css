@@ -111,6 +111,14 @@ h3 + .text__info{font-size:3.5vw}
 .box__layer-content .text{font-size:18px}
 .box__layer-content .form-control{margin-top:28px;margin-bottom:0}
 .box__layer-footer{padding:0 0 20px}
+.box__layer--alert .box__layer-inner .button__closed{top:25px;right:25px}
+.box__layer--alert .box__layer-content{padding:40px 0 20px;text-align:center}
+.box__layer--alert .text{margin-bottom:15px}
+.box__layer--alert .form-checkbox{display:inline-block}
+.box__layer--alert ul li{text-align:left;max-width:600px;margin:0 auto}
+.box__layer--alert .box__layer-footer{text-align:center}
+.box__layer--alert .box__layer-footer .box__button a,
+.box__layer--alert .box__layer-footer .box__button button{display:inline-block;width:184px;margin:0 10px}
 @media (max-width:1419px){
 	.box__layer-header h2{font-size:3.4vw}
 	.box__layer-content .text{font-size:18px}
@@ -123,6 +131,10 @@ h3 + .text__info{font-size:3.5vw}
 	.box__layer-inner .button__closed{top:0}
 	.box__layer-content .text{font-size:4vw}
 	.box__layer-footer{padding:0 0 4vw}
+	.box__layer--alert .box__layer-inner .button__closed{top:3vw;right:3vw}
+	.box__layer--alert .box__layer-footer .box__button a,
+	.box__layer--alert .box__layer-footer .box__button button{display:inline-block;width:32vw;margin:0 1.4vw}
+	.box__layer--alert ul li{padding-left:4vw}
 }
 
 /* gnb */
