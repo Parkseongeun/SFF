@@ -11,6 +11,21 @@
 </head>
 <body>
 
+<!-- to.Dev : 캐시 정책 팝업 -->
+<div class="box__layer--cache" id="box__layer--cache" role="dialog">
+	<div class="box__layer-inner">
+		<button class="button__closed">닫기</button>
+		<div class="box__layer-content">
+			<p class="text"><span>이 웹사이트는 쿠키를 사용합니다. 사이트를 계속해서 둘러보시면 쿠키 사용에 동의하게 됩니다.</span><a href="privacy.html" class="link">여기에서 자세히 알아보기</a></p>
+		</div>
+	</div>
+</div>
+<!-- // to.Dev : 캐시 정책 팝업 -->
+
+<div class="box__spinner" style="display: none;">
+	<span class="for-a11y">loading...</span>
+</div>
+
 <header class="header">
 	<div class="wraparea">
 		<h1 class="logo"><a href="main.html"><strong>Samsung Foundry Forum</strong> 2021</a></h1>
@@ -387,6 +402,17 @@
 			}
 		},500); 
     });
+
+	// 로딩 테스트
+	$(window).load(function(){
+		$('.box__spinner').show();
+		setTimeout(function(){
+			$('.box__spinner').hide();
+		}, 1000)
+	})
+	$('.box__layer--cache .button__closed').on('click',function(){
+		$('.box__layer--cache').hide();
+	});
 </script>
 </body>
 </html>
