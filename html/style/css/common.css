@@ -1054,3 +1054,19 @@ input[type=radio]:checked + label > span:after{left:50%;top:50%;width:2vw;height
 .termswrap .table th, .termswrap .table td{font-size:3vw;border:1px solid #dadada}
 .termswrap .table td li{font-size:3vw}
 }
+
+.box__privacy{text-align:left}
+.box__privacy .text__agree span{display: inline-block;vertical-align: middle;margin:0}
+.box__privacy h4{margin-bottom:10px;color:#1261bb}
+.box__privacy .scrollbox{font-size:16px;padding:5px 20px 10px;margin-bottom:14px;max-height:calc(50vh - 260px);overflow-y:auto;border:1px solid #e0e0e0}
+.box__privacy ol li{margin-top:10px}
+.box__privacy ol li .tit{font-size:1em}
+.box__privacy ol li .txt{margin-left:16px;font-size:1em}
+@media (max-width:1419px){
+	.box__privacy h4{font-size:15px}
+	.box__privacy ol li{font-size:13px}
+	.box__privacy .text__agree span{font-size:13px}
+	.box__privacy input[type="checkbox"] + label, .box__privacy input[type=radio] + label{font-size:13px}
+}
+@media (max-width:768px){
+}
