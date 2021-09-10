@@ -61,6 +61,26 @@
 			<div class="box__inner">
 				<form action="" class="form__regist">
 					<div class="form-control js-active">
+						<label for="iptCurID"><span class="text--required">*</span> Email Address (ID)</label>
+						<input type="email" id="iptCurID" value="jun0326@naver.com" aria-required="true">
+					</div>
+					<div style="text-align:center">
+						<button type="button" class="button button__change-pwd">Change Password</button>
+					</div>
+					<div class="form-control" id="curPwd" style="display:none">
+						<label for="iptCurPW"><span class="text--required">*</span> Current Password</label>
+						<input type="password" id="iptCurPW" value="" aria-required="true">
+					</div>
+					<div class="form-control" id="newPwd" style="display:none">
+						<label for="iptNewPW"><span class="text--required">*</span> New Password</label>
+						<input type="password" id="iptNewPW" value="" aria-required="true">
+					</div>
+					<div class="form-control" id="cNewPwd" style="display:none">
+						<label for="iptCNewPWC"><span class="text--required">*</span> Confirm New Password</label>
+						<input type="password" id="iptCNewPWC" value="" aria-required="true">
+					</div>
+					<br><br><br>
+					<div class="form-control js-active">
 						<label for="iptID"><span class="text--required">*</span> Email Address (ID)</label>
 						<input type="email" id="iptID" value="jun0326@naver.com" aria-required="true">
 					</div>
@@ -267,5 +287,12 @@
 <script type="text/javascript" src="style/js/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="style/js/swiper.min.js"></script>
 <script type="text/javascript" src="style/js/ui.js"></script>
+<script>
+$(document).ready(function(){
+	$('.button__change-pwd').click(function(){
+		$('#curPwd,#newPwd,#cNewPwd').show();
+	})
+})
+</script>
 </body>
 </html>
