@@ -1029,7 +1029,7 @@ input[type=radio]:checked + label > span:after{left:50%;top:50%;width:2vw;height
 .termswrap li .bul{margin-left:-26px;width:22px;display:inline-block}
 .termswrap .table{width:100%;margin:20px 0;border:1px solid #000;table-layout: fixed}
 .termswrap .table th{text-align:center;background-color:#f5f5f5}
-.termswrap .table th, .termswrap .table td{padding:4px;font-size:0.96em;border:1px solid #dadada}
+.termswrap .table th, .termswrap .table td{padding:4px 10px;font-size:0.96em;border:1px solid #dadada}
 .termswrap .table td li{font-size:0.96em}
 @media (max-width:1419px){
 .termswrap{padding:60px 24px 80px}
@@ -1062,6 +1062,8 @@ input[type=radio]:checked + label > span:after{left:50%;top:50%;width:2vw;height
 .box__privacy ol li{margin-top:10px}
 .box__privacy ol li .tit{font-size:1em}
 .box__privacy ol li .txt{margin-left:16px;font-size:1em}
+.box__privacy ol ul.txt{margin-left:32px}
+.box__privacy ul li{margin:0;max-width:100%;list-style:disc}
 @media (max-width:1419px){
 	.box__privacy h4{font-size:15px}
 	.box__privacy ol li{font-size:13px}
