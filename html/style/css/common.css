@@ -216,9 +216,9 @@ h3 + .text__info{font-size:3.5vw}
 }
 
 /* main */
-.box__article--visual .wraparea{position:relative;height:0;padding-top:600px;background-color:#000}
+.box__article--visual .wraparea{position:relative;height:0;padding-top:803px;background-color:#000}
 .box__article--visual #visualVideo{position:absolute;z-index:0;top:0;left:0;width:100%;height:100%}
-.box__article--visual .text__visual{position:absolute;z-index:2;top:100px;left:100px}
+.box__article--visual .text__visual{position:absolute;z-index:2;top:274px;left:100px}
 .box__article--visual .text__visual .text1{font-family:'SamsungSharpSans';font-size:74px;font-weight:bold;color:#fff;line-height:1.13;letter-spacing:1.5px}
 .box__article--visual .text__visual .text1 span{font-weight:normal;color:#fff}
 .box__article--visual .text__visual .text2{display:inline-block;margin-top:8px;font-family:'SamsungSharpSans';font-size:23px;font-weight:300;color:#fff;letter-spacing:1.8px}
@@ -288,8 +288,8 @@ a.box__card--speaker .box__info .text__session{padding-top:20px}
 .list__networking-person .box__info .link__info{display:inline-block;margin-top:5px;width:28px;height:28px;background:url(../../images/common/ico_more-plus.png) no-repeat 0 0;background-size:100% auto;transition:all 0.4s}
 .list__networking-person .box__info .link__info:hover{-webkit-transform:rotate(90deg);transform:rotate(90deg)}
 @media (max-width:1419px){
-.box__article--visual .wraparea{padding-top:42%}
-.box__article--visual .text__visual{top:6vw;left:6vw}
+.box__article--visual .wraparea{padding-top:57%}
+.box__article--visual .text__visual{top:15vw;left:6vw}
 .box__article--visual .text__visual .text1{font-size:4.4vw}
 .box__article--visual .text__visual .text2{margin-top:1vw;font-size:1.7vw}
 .box__article--visual .text__visual .text3{display:block;margin-top:0;font-size:1.7vw}
