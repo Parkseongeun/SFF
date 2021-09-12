@@ -560,7 +560,8 @@ form .text-notice{padding-top:12px;font-size:15px;color:#000}
 .box_agreement .box__form{padding:34px 42px 38px;background-color:#fff;border:1px solid #e6e6e6;border-radius:20px}
 .box_agreement .box__form-control{margin-top:8px;display:-webkit-flex;display:flex;justify-content:space-between;flex-direction:row;width:100%}
 .box_agreement .box__form-control p{font-size:17px;color:#000}
-.box_agreement .box__form-control p a{display:inline-block;margin-left:10px;font-weight:bold;text-decoration:underline}
+.box_agreement .box__form-control p a{display:inline-block;font-weight:bold;text-decoration:underline}
+.box_agreement .box__form-control p span{display:inline-block;margin-right:10px}
 .box_agreement .box__form-control .form-checkbox{-webkit-flex:none;flex:none;float:right}
 @media (max-width:1419px){
 .registwrap{padding:60px 24px 80px}
