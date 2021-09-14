@@ -58,13 +58,25 @@
 				<h2>Reset password</h2>
                 <p class="text__info">Enter your account ID below to reset your password.</p><br>
 				<form action="" class="form__regist">
-					<div class="form-control">
-						<label for="iptID">ID (E-mail)</label>
-						<input type="email" id="iptID" aria-required="true">
+					<div class="form-group">
+						<div class="form-control">
+							<label for="iptAuth">인증번호 입력 (6-digit code)</label>
+							<input type="text" id="iptAuth" aria-required="true">
+						</div>
+						<button type="button" class="button">Verify</button>
+					</div>
+					<div class="form-control" id="newPwd">
+						<label for="iptNewPW">New Password</label>
+						<input type="password" id="iptNewPW" value="" aria-required="true">
+					</div>
+					<div class="form-control" id="cNewPwd">
+						<label for="iptCNewPWC">Confirm New Password</label>
+						<input type="password" id="iptCNewPWC" value="" aria-required="true">
 					</div><br>
 				</form>
 				<div class="box__button">
-					<button type="submit" class="button button--blue">Verify Email</button>
+					<button type="submit" class="button button--blue">Reset</button>
+					<p class="link__find"><a href="resetPW.html">Re-send the code</a></p>
 				</div>
 			</div>
 		</article>
