@@ -510,9 +510,9 @@ a.box__card--speaker .box__info .text__session{padding-top:20px}
 .form-control select{-webkit-appearance:none;-moz-appearance:none;appearance:none;padding:0 30px 0 0;border-radius:0;text-overflow:ellipsis}
 .form-control textarea{padding:12px;border:1px solid #bbb;width:100%;-webkit-box-sizing: border-box;box-sizing: border-box}
 .form-control textarea:focus{outline:none;border:1px solid #777}
-.form-group{margin:32px 0 20px 0;display:flex;display:-webkit-flex}
-.form-group .form-control{margin:0;margin-right:10px;-webkit-flex:1;flex:1}
-.form-group .button{-webkit-flex:none;flex:none;width:80px}
+.box__article--login .form-group{margin:32px 0 20px 0;display:flex;display:-webkit-flex}
+.box__article--login .form-group .form-control{margin:0;margin-right:10px;-webkit-flex:1;flex:1}
+.box__article--login .form-group .button{-webkit-flex:none;flex:none;width:80px}
 @media screen and (min-width:0\0){
 .form-control > select{color:#fff}
 a{display:inline-block}
@@ -582,7 +582,7 @@ form .text-notice{padding-top:12px;font-size:15px;color:#000}
 .box__files .upload-name{width:28vw;font-size:1.7vw}
 .inline-form-group .form-radio--avatar input[type="radio"]+label{max-width:90%}
 .inline-form-group .form-radio--avatar input[type="radio"]+label img{width:8.538vh;height:8.538vh}
-.form-group .button{height:36px;line-height:36px}
+.box__article--login .form-group .button{height:36px;line-height:36px}
 }
 @media (max-width:768px){
 .registwrap{padding:10vw 12px 10vw;min-height:-webkit-calc(100vh - 36px);min-height:calc(100vh - 36vw)}
@@ -628,7 +628,7 @@ input[type=radio]:checked + label > span:after{left:50%;top:50%;width:2vw;height
 .box_agreement .box__form-control + .box__form-control{margin-top:3.5vw}
 .box_agreement .box__form-control p{clear:both;font-size:3.5vw}
 .box_agreement .box__form-control .form-checkbox{margin-top:1.8vw}
-.form-group .button{height:8vw;line-height:8vw}
+.box__article--login .form-group .button{height:8vw;line-height:8vw}
 }
 
 /* Login */
