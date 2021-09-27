@@ -1109,10 +1109,6 @@ form .text-notice .text--required{font-size:3vw}
 	.box__article--networking ~ .box__article--landing{padding-top:0}
 }
 
-#layer__survey{overflow-y: auto}
-#layer__survey .box__layer-inner{max-width:900px;top:80px;-webkit-transform: translateX(-50%);transform: translateX(-50%)}
-#layer__survey .box__layer-inner iframe{width:100%;height:1600px;border:none}
-#layer__survey .box__layer-header{height:50px}
 .surveywrap{max-width:800px;margin:0 auto;font-size:18px;padding-bottom:40px}
 .surveywrap .wraparea{min-width:800px !important;padding:0 40px !important;box-sizing:-webkit-border-box;box-sizing:border-box}
 .surveywrap h2{text-align:center;font-family:'SamsungOne',sans-serif;font-weight:bold;font-size:1.5em !important;letter-spacing:0;}
