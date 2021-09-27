@@ -83,7 +83,7 @@
             <p class="text__info">Did you have a good time at Samsung Foundry Forum 2021? <br>
 				Please participate in a brief survey about this forum so we can provide more improved programs in the future.<br>
 				You will get a badge for the prize event after completing the survey.</p>
-            <a href="#" class="button button__apply" id="GETDICT_BUTTON_TEXT_3">Apply</a>
+            <a href="#" onclick="FuncLayer.open('#layer__survey',event)" aria-haspopup="dialog" class="button button__apply" id="GETDICT_BUTTON_TEXT_3">Apply</a>
 		</article>
 		<article class="box__article box__article--networking fade-in">
 			<h3 id="GETDICT_MYPAGE_HEAD_3">Networking with Attendees</h3>
@@ -317,6 +317,19 @@
 			</div>
 		</div>
 		<!-- // to.Dev : Chat 팝업 -->
+
+        <!-- to.Dev : Survey 팝업 -->
+		<div class="box__layer" id="layer__survey" role="dialog">
+			<div class="box__layer-inner">
+				<div class="box__layer-header">
+					<button class="button__closed" onclick="FuncLayer.closed()">닫기</button>
+				</div>
+				<div class="box__layer-content">
+					<iframe src="survey.html"></iframe>
+				</div>
+			</div>
+		</div>
+		<!-- // to.Dev : Survey 팝업 -->
 		
 	</div>
 </div>
