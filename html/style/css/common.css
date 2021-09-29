@@ -1101,7 +1101,8 @@ form .text-notice .text--required{font-size:3vw}
 @media (max-width:768px){
 }
 
-.registwrap .box__article.box__article--landing{border-radius: 0;padding-bottom: 0;border:none;background-color: transparent;}
+.registwrap .box__article.box__article--landing,
+.termswrap .box__article.box__article--landing{border-radius: 0;padding-bottom: 0;border:none;background-color: transparent;}
 .box__article--landing{padding:80px 0 0}
 .box__article--landing img{width:100%}
 @media (max-width:1419px){
