@@ -72,7 +72,7 @@ img{max-width:100%}
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 body,html,.wraparea{min-width:1420px}
 }
-h2{font-family:'SamsungSharpSans';padding:50px 0 16px;font-size:44px;letter-spacing:-1.55px;color:#111}
+h2{font-family:'SamsungSharpSans',sans-serif;padding:50px 0 16px;font-size:44px;letter-spacing:-1.55px;color:#111}
 h2 + .text__info{margin-top:-16px;margin-bottom:22px;font-size:18px;color:#000;word-break:break-word}
 h3{padding:50px 0 12px;font-size:36px;font-weight:bold}
 h3 + .text__info{font-size:18px;line-height:1.5;color:#000}
@@ -139,7 +139,7 @@ h3 + .text__info{font-size:3.5vw}
 
 /* gnb */
 .header{position:relative;z-index:10;height:81px;background-color:#fff}
-.header .logo{position:absolute;top:25px;left:0;font-family:'SamsungSharpSans';font-size:24px;font-weight:500;color:#111;letter-spacing:0}
+.header .logo{position:absolute;top:25px;left:0;font-family:'SamsungSharpSans',sans-serif;font-size:24px;font-weight:500;color:#111;letter-spacing:0}
 .header .box__nav--header{position:absolute;top:27px;left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);font-size:0;line-height:0}
 .header .box__nav--header::after{content:'';display:block;clear:both}
 .header .box__nav--header ul{text-align:center}
@@ -162,7 +162,7 @@ h3 + .text__info{font-size:3.5vw}
 .header .box__link .box__lang.active a.link__lang::after{-webkit-transform:rotateZ(180deg);transform:rotateZ(180deg)}
 .header .box__lang .list a{display:block;position:relative;width:auto;height:auto;margin:0 16px;padding-bottom:8px;background:none;color:#969696}
 .header .box__lang .list a:hover{color:#444}
-.header .box__lang .list a span{font-family:'SamsungSharpSans';font-weight:bold;font-size:16px;line-height:1}
+.header .box__lang .list a span{font-family:'SamsungSharpSans',sans-serif;font-weight:bold;font-size:16px;line-height:1}
 .header .box__lang .list a.on::after{content:'';position:absolute;bottom:6px;left:0;right:0;display:block;border-bottom:2px solid #000}
 .header .box__lang .list a.on span{margin-bottom:14px;color:#000}
 .header .button__gnb{display:none;margin-left:10px;width:29px;height:29px;vertical-align:top;background:url(../../images/common/ico_gnb-open.png);background-size:100% auto}
@@ -220,12 +220,13 @@ h3 + .text__info{font-size:3.5vw}
 .box__article--visual #visualVideo{position:absolute;z-index:0;top:0;left:0;width:100%;height:100%}
 .box__article--visual #visualVideo video{position:absolute;z-index:0;top:0;left:0;width:100%;height:100%}
 .box__article--visual #visualVideo .vjs{position:absolute;z-index:0;top:0;left:0;width:100%;height:100%}
-.box__article--visual .text__visual{position:absolute;z-index:2;top:235px;left:100px}
-.box__article--visual .text__visual .text1{font-family:'SamsungSharpSans';font-size:74px;font-weight:bold;color:#fff;line-height:1.13;letter-spacing:1.5px}
+.box__article--visual .text__visual{position:absolute;z-index:2;top:207px;left:100px}
+.box__article--visual .text__visual .text1{font-family:'SamsungSharpSans',sans-serif;font-size:74px;font-weight:bold;color:#fff;line-height:1.13;letter-spacing:1.5px}
 .box__article--visual .text__visual .text1 span{font-weight:normal;color:#fff}
-.box__article--visual .text__visual .text2{display:inline-block;margin-top:8px;font-family:'SamsungSharpSans';font-size:23px;font-weight:300;color:#fff;letter-spacing:1.8px}
-.box__article--visual .text__visual .text3{display:inline-block;margin-top:3px;font-family:'SamsungSharpSans';font-size:23px;font-weight:300;color:#fff;letter-spacing:1.8px}
-.box__article--visual .text__visual .link__regist{width:172px;margin-top:22px;font-size:16px;font-weight:500}
+.box__article--visual .text__visual .text2{display:inline-block;margin-top:8px;font-family:'SamsungSharpSans',sans-serif;font-size:23px;font-weight:300;color:#fff;letter-spacing:1.8px}
+.box__article--visual .text__visual .text3{display:inline-block;margin-top:3px;font-family:'SamsungSharpSans',sans-serif;font-size:23px;font-weight:300;color:#fff;letter-spacing:1.8px}
+.box__article--visual .text__visual .link__regist{display:block;width:172px;margin-top:22px;font-size:16px;font-weight:500}
+.box__article--visual .text__visual .link__regist ~ .link__regist{margin-top:11px}
 .list__overview li{display:table;margin-bottom:11px}
 .list__overview li::after{content:none;clear:both;display:block}
 .list__overview .text__title{float:left;position:relative;width:120px;padding-left:22px;-webkit-box-sizing:border-box;box-sizing:border-box;font-size:18px;font-weight:bold}
@@ -353,6 +354,7 @@ a.box__card--speaker .box__info .text__session{padding-top:15px}
 .box__article--visual .text__visual .text2{font-size:3.5vw;letter-spacing:-0.5px}
 .box__article--visual .text__visual .text3{font-size:3.5vw}
 .box__article--visual .text__visual .link__regist{margin-top:0;width:30vw;font-size:3vw}
+.box__article--visual .text__visual .link__regist ~ .link__regist{margin-top:6px}
 .box__article--welcome h2{padding:8vw 0 2vw;font-size:3.5vw;letter-spacing:-0.5px}
 .box__article--welcome .text__info{padding:6vw 0 0;font-size:3.5vw;line-height:1.68}
 .box__article--welcome .text__opendate{margin-left:0}
@@ -410,8 +412,8 @@ a.box__card--speaker .box__info .text__session{padding-top:15px}
 .box__article--keynote:after{content:'';clear:both;display:block}
 .box__article--keynote .box__title{display:-webkit-flex;display:flex;flex-direction:column;justify-content:center;flex:none;width:387px;padding-bottom:40px;text-align:center}
 .box__article--keynote .box__title h2{padding-top:0;line-height:1.4;letter-spacing:-1px}
-.box__article--keynote .box__title h2 span{display:block;font-family:'SamsungSharpSans';font-weight:normal;font-size:25px}
-.box__article--keynote .box__title h2 strong{display:block;font-family:'SamsungSharpSans';font-weight:bold;font-size:44px;margin-top:-6px}
+.box__article--keynote .box__title h2 span{display:block;font-family:'SamsungSharpSans',sans-serif;font-weight:normal;font-size:25px}
+.box__article--keynote .box__title h2 strong{display:block;font-family:'SamsungSharpSans',sans-serif;font-weight:bold;font-size:44px;margin-top:-6px}
 .box__article--keynote .box__title > span{display:block;margin-top:-10px;font-size:18px;font-weight:300;color:#555}
 .box__article--keynote .box__content{width:100%}
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -1154,3 +1156,15 @@ form .text-notice .text--required{font-size:3vw}
 .surveywrap .box__scale input[type=radio] + label{width:100%;padding-left:0}
 .surveywrap .box__scale input[type=radio] + label > span{left:50%;margin-top:5px;margin-left:-11px;background-color:#fff}
 .surveywrap .box__scale input[type=radio]:checked + label > span:after{top:2px;left:2px;width:14px;height:14px}
+
+.layer__live-notice{position:absolute;z-index:10;top:218px;right:100px;border-radius:20px;padding:30px;background-color:#fff}
+.layer__live-notice strong{font-family:'SamsungSharpSans',sans-serif;font-size:1.28em}
+.button__close{position:absolute;top:15px;right:15px;background-color:#ccc;width:30px;height:30px;background:url(../../images/common/ico_close.png) no-repeat 0 0;background-size:100% auto;font-size:0;line-height:0}
+@media (max-width:1419px){
+.layer__live-notice{top:13vw;right:4vw;padding:2.5vw;font-size:1.4vw;border-radius:12px}
+.button__close{top:1.5vw;right:1.5vw;width:2.5vw;height:2.5vw}
+}
+@media (max-width:768px){
+.layer__live-notice{top:102vw;left:4vw;right:4vw;padding:3.5vw;font-size:3vw;border-radius:8px}
+.button__close{top:3.5vw;right:3.5vw;width:4.5vw;height:4.5vw}
+}
