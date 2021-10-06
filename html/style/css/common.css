@@ -1172,12 +1172,12 @@ form .text-notice .text--required{font-size:3vw}
 
 .layer__live-notice{position:absolute;z-index:10;top:218px;right:100px;border-radius:20px;padding:30px;background-color:#fff}
 .layer__live-notice strong{font-family:'SamsungSharpSans',sans-serif;font-size:1.28em}
-.button__close{position:absolute;top:15px;right:15px;background-color:#ccc;width:30px;height:30px;background:url(../../images/common/ico_close.png) no-repeat 0 0;background-size:100% auto;font-size:0;line-height:0}
+.layer__live-notice .button__close{position:absolute;top:15px;right:15px;background-color:#ccc;width:30px;height:30px;background:url(../../images/common/ico_close.png) no-repeat 0 0;background-size:100% auto;font-size:0;line-height:0}
 @media (max-width:1419px){
 .layer__live-notice{top:13vw;right:4vw;padding:2.5vw;font-size:1.4vw;border-radius:12px}
-.button__close{top:1.5vw;right:1.5vw;width:2.5vw;height:2.5vw}
+.layer__live-notice .button__close{top:1.5vw;right:1.5vw;width:2.5vw;height:2.5vw}
 }
 @media (max-width:768px){
 .layer__live-notice{top:102vw;left:4vw;right:4vw;padding:3.5vw;font-size:3vw;border-radius:8px}
-.button__close{top:3.5vw;right:3.5vw;width:4.5vw;height:4.5vw}
+.layer__live-notice .button__close{top:3.5vw;right:3.5vw;width:4.5vw;height:4.5vw}
 }
